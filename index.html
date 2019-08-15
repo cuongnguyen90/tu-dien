@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body>
+<input type="text" onchange="dictionary(this.value)">
+<p id="result"></p>
+<script>
+    function dictionary(key){
+        let dicEN = ['dog','cat','chicken','bird','ball','house'];
+        let dicVI = ['con cho','con meo','con ga','con chim','qua bong','ngoi nha'];
+        for (i= 0;i < dicEN.length ;i++){
+            if (key == dicEN[i]){
+                document.getElementById('result').innerText = dicVI[i];
+            }else {
+                document.getElementById('result').innerText = "Not Avaiable"
+            }
+        }
+    }
+
+
+
+
+
+</script>
+</body>
+</html>
